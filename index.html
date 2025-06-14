@@ -7,24 +7,120 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8f6f3;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #e8e2d9 0%, #d4c7b8 100%);
+        }
+        .section-bg {
+            background-color: #f1ede7;
+        }
+        .card-bg {
+            background-color: #faf8f5;
+        }
+        .text-primary {
+            color: #2d2520;
+        }
+        .text-accent {
+            color: #8b6f47;
+        }
+        .floating-cat {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .hero-image {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
-<body>
-    <h1>Katie & Kisa Inc.</h1>
-    <h2>Precision Accounting & Professional Cat Supervision</h2>
-    <p>Where spreadsheets meet fur balls, and every calculation comes with a side of purrs</p>
-    
-    <section>
-        <h3>Meet Katie</h3>
-        <p>Professional accountant with feline supervision expertise</p>
+<body class="text-primary">
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center px-4 py-12">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-primary">
+                Katie & Kisa Inc.
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-accent font-medium">
+                Precision Accounting & Professional Cat Supervision
+            </p>
+            
+            <!-- Hero Image -->
+            <div class="mb-8">
+                <img src="https://cdn1.genspark.ai/user-upload-image/22_generated/42caafac-3550-4673-a875-0d3efec320bf" 
+                     alt="Cat sleeping on laptop keyboard while person works" 
+                     class="hero-image w-full max-w-4xl mx-auto">
+            </div>
+            
+            <p class="text-lg text-accent italic max-w-2xl mx-auto">
+                "Where spreadsheets meet fur balls, and every calculation comes with a side of purrs"
+            </p>
+        </div>
     </section>
-    
-    <section>
-        <h3>Kisa's Corner - Chief Feline Officer</h3>
-        <p>Professional keyboard supervision and treat auditing</p>
+
+    <!-- Meet Katie Section -->
+    <section class="section-bg py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center justify-center mb-8">
+                <i class="fas fa-calculator text-4xl text-accent mr-4"></i>
+                <h2 class="text-4xl font-bold text-primary">Meet Katie</h2>
+                <img src="https://cdn1.genspark.ai/user-upload-image/22_generated/a88fddc2-5fb4-4b03-9b09-ca69768871a2" 
+                     alt="Cool black cat" 
+                     class="floating-cat w-16 h-16 object-cover rounded-full ml-4">
+            </div>
+            
+            <div class="card-bg rounded-2xl p-8 shadow-lg">
+                <p class="text-lg leading-relaxed mb-6">
+                    Katie is a brilliant accountant with an uncanny ability to balance spreadsheets while simultaneously fending off rogue coffee spills and tactical feline interference. She's precise, logical, and probably calculating your tax deductions in her head right now.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Her superpowers include pivot table mastery, detecting discrepancies from across the room, and maintaining professional composure while a 12-pound black shadow critiques her keyboard technique from directly on top of it.
+                </p>
+                <div class="flex items-center justify-center space-x-6 text-accent">
+                    <div class="text-center">
+                        <i class="fas fa-coffee text-2xl mb-2"></i>
+                        <p class="text-sm">Coffee Expert</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-chart-line text-2xl mb-2"></i>
+                        <p class="text-sm">Excel Wizard</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-cat text-2xl mb-2"></i>
+                        <p class="text-sm">Cat Whisperer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <footer>
-        <p>© 2024 Katie & Kisa Inc. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="section-bg py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="flex justify-center items-center space-x-4 mb-6">
+                <i class="fas fa-paw text-2xl text-accent"></i>
+                <h3 class="text-2xl font-bold text-primary">Katie & Kisa Inc.</h3>
+                <i class="fas fa-paw text-2xl text-accent"></i>
+            </div>
+            <p class="text-lg text-accent mb-4">
+                Precision Accounting & Professional Cat Supervision
+            </p>
+            <p class="text-sm text-gray-600">
+                © 2024 Katie & Kisa Inc. All rights reserved. No keyboards were permanently harmed in the making of this business.
+            </p>
+            <div class="mt-6 flex justify-center space-x-6 text-2xl text-accent">
+                <i class="fas fa-calculator"></i>
+                <i class="fas fa-coffee"></i>
+                <i class="fas fa-cat"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
